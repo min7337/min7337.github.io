@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <style>
+  *{ 
+   	padding:0;
+   	margin:0; 
+   }
+   .clear{
+    clear: both;
+  }
+
+   body{
+   	font-family: '돋움';
+   	font-size: 14px;
+   	color: #444444
+   }
+   li{
+   	list-style: none;
+   }
+
+  header{
+    width:1500px;
+    height:200px;
+    margin: 0 auto;
+    border: solid 0px red;
+  }
+  #logo{
+  	float:left;
+  	margin: 10px 0 0 650px;
+  	border: solid 0px red;
+  }
+ #top_menu{
+ 	float: right;
+ 	text-align: right;
+ 	margin-top: 20px;
+ border: solid 0px red;
+ }
+ #main_menu{
+  width: 100%:;
+  height: 50px;
+ 	margin: 0 0 10px 0;
+ 	border: solid 0px red;
+  background-color:#ffa6a6;
+ }
+#menu_box{
+  width: 1140px;
+  height: 50px;
+  margin: 0 auto;
+  border: solid 0px green;
+ }
+ #main_menu li{
+ 	display: inline;
+ 	margin:0 50px 0 100px;
+ }
+
+#ook{
+	width: 1600px;
+   
+    margin: 0 auto;
+    border:solid 1px red;
+}
+
+  #contents{
+    width: 1400px;
+  
+    margin: 0 auto;
+    border:solid 0px red;
+}
+
+ #main_contents{
+    width: 1300px;
+    float: left;
+    margin-top: 0px;
+    margin: 0 auto;
+    border:solid 1px skyblue;
+
+  }
+
+ table{
+ 	width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+	border:#f6bb9e 2px solid;
+	border-collapse: collapse;
+}
+td{
+	padding: 5px 10px;
+	border:#f6bb9e 1px solid;
+}
+
+		
+th{
+	background-color: #ffeeee;
+	border:#f6bb9e 1px solid;
+	text-align: center;
+}
+textarea{
+	width: 600px;
+	height: 100px;
+	padding: 5px;
+	border: #ccc 1px solid;
+}
+textarea:focus{
+	background-color:skyblue; 
+}
+input[type="text"]
+{
+	width: 400px;
+	padding: 5px;
+	border:#cc 1px dotted;
+	font-size: 20px;
+}
+input:[type="radio"]
+{cursor: pointer;}
+input[type="checkbox"]
+{cursor: pointer;}
+input:focus{
+	background-color:skyblue; 
+}
+.btns{
+	margin: 30px;
+	margin-left:300px;
+}
+.btn{
+	width: 100px;
+	margin: 0 10px;
+	padding: 10px;
+	border:none;
+	font-size: 16px;
+}
+/*버튼에 마우스를 올려 놓았을때*/
+.btn:hover{
+	opacity: 0.5;
+}
+/*버튼을 누를는 시간*/
+.btn:active{
+	color: red;
+}
+.btn-clear{
+	background-color: #ccc;
+}
+.btn-send{
+background-color: #f6bb9e;
+}
+
+
+		ul{
+			list-style: none;
+		}
+ #main_title{
+    width: 1340px;
+    height:50px;
+    margin: 0 auto;
+    border: solid 0px red;
+
+  }
+h1{
+      width: 1440px;
+      float: left;
+      font-size: 24px;
+      border:solid 0px red;
+      margin: 22px 0 0 20px;
+      padding-left: 10px;
+      border-left: solid 7px #ffa6a6;
+    }
+
+</style>
+</head>
+<body>
+<header>
+	<dir id="logo"><a href="index.html" target="_blank"><img src="img/logo.png" width="250"></a></dir>
+		<div id="top_menu"><a href="login.html" target="_blank"> 로그인 ㅣ 회원가입</a></div>
+
+</header>
+<section id="main_menu">
+  <ul id="menu_box">
+    <li><a href="menu1.html" target="_blank"><img src="img/menu1.png" width="130"></a></li>
+    <li><a href="menu2.html" target="_blank"><img src="img/menu2.png" width="130"></a></li>
+    <li><a href="menu3.html" target="_blank"><img src="img/menu3.png" width="130"></a></li>
+    <li><a href="menu2_1.html"><img src="img/menu4_a.png" width="130"></a></li>
+  </ul>
+  </section>
+
+ <section id="main_title"><h1>호텔</h1></section>
+
+<section id="contents">
+
+
+<table>
+	<tr>
+		<th>여행지:</th>
+		<td><select name="a">
+			<option value="">선택해주세요</option>
+			
+				 <option>다낭</option>
+                 <option>하노이</option>
+                 <option>호치민</option>
+           </select>
+
+		</td>
+	</tr>
+	<tr>
+		<th>숙박 인원:</th>
+		<td>
+		<input type="radio" name="g">1명
+		<input type="radio" name="g">2명
+		<input type="radio" name="g">3명
+		<input type="radio" name="g">4명
+		<input type="radio" name="g">5명
+	    </td>
+	</tr>
+	
+	<tr>
+		<th>체크인:</th>
+		<td><input type="date"></td>
+	</tr>
+	<tr>
+		<th>체크아웃:</th>
+		<td><input type="date"></td>
+	</tr>
+	<tr>
+		<th>성급:</th>
+		<td>
+		<input type="radio" name="h">1성
+		<input type="radio" name="h">2성
+		<input type="radio" name="h">3성
+		<input type="radio" name="h">4성
+		<input type="radio" name="h">5성
+	    </td>
+	</tr>
+	<th>객실:</th>
+		<td><select name="a">
+			<option value="">선택해주세요</option>
+			
+				 <option>객실 1개</option>
+                 <option>객실 2개</option>
+                 <option>객실 3개</option>
+           </select>
+	<tr>
+		<th>호텔 시설:</th>
+		<td>		
+		<input type="checkbox">무료 와이파이
+		<input type="checkbox">레스토랑
+		<input type="checkbox">스파 및 웰니스 센터
+		<input type="checkbox">주차장
+		<input type="checkbox">주방
+		<input type="checkbox">고속 인터넷
+		</td>
+
+	</tr>
+    <tr>
+    	<th>가격:</th>
+         <td> 만원<input type="range" max="30" min="10" step="1">100만원<p><pre></td>
+     </tr>
+</table>
+<p>
+	<div class="btns">
+	<input type="submit" value="검색"class="btn btn-send">
+
+</div>
+	
+</p>	
+
+ </section>
+
+<section id="contents">
+<div id="main_contents">
+
+    <li><img src="img/hotel1.jpg" width="1300" height="400"></li>
+   
+</div>
+</section>
+<section id="contents">
+<div id="main_contents">
+      <li><img src="img/hotel2.jpg" width="1300" height="400"></li>
+ </div>
+</section>
+
+<section id="contents">
+<div id="main_contents">
+      <li><img src="img/hotel3.jpg" width="1300" height="400"></li>  
+</div>
+</section>
+
+<section id="contents">
+<div id="main_contents">
+    <li><img src="img/hotel4.jpg" width="1300" height="400"></li> 
+</div>
+</section>
+
+
+</body>
+</html>
